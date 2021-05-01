@@ -6,13 +6,12 @@ body {
 
 .main-background {
   height: 100vh;
+  width: 100%;
   background-color: hsl(185, 75%, 39%);
   background-image: 
-    url('./images/bg-pattern-bottom.svg'), 
-    url('./images/bg-pattern-top.svg');
-  background-position:
-    200% -200%, /* this positions the first image */
-    -50% 400%; /* this positions the second image */
+  url('./images/bg-pattern-top.svg'),
+  url('./images/bg-pattern-bottom.svg');
+  background-position: right calc(50vw + 15%) bottom calc(65vh - 15vw), left calc(41vw + 25%) top calc(72vh - 10vw);
   background-repeat: no-repeat;
 }
 
