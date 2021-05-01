@@ -1,0 +1,145 @@
+/* CARD CONTAINER */
+body {
+  font-family: Kumbh Sans, serif;
+  line-height: 40px;
+}
+
+.main-background {
+  height: 100vh;
+  background-color: hsl(185, 75%, 39%);
+  background-image: 
+    url('./images/bg-pattern-bottom.svg'), 
+    url('./images/bg-pattern-top.svg');
+  background-position:
+    200% -200%, /* this positions the first image */
+    -50% 400%; /* this positions the second image */
+  background-repeat: no-repeat;
+}
+
+.card {
+  height: 600px;
+  width: 550px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card .card-head {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 40%;
+  border-top: 15px;
+  background-image: url('./images/bg-pattern-card.svg');
+  background-size: cover;
+}
+
+.profile-img {
+  top: -15%;;
+}
+
+.profile-img div {
+  border: solid white 8px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url('./images/image-victor.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.profile-info {
+  height: 25%;
+  top: -15%;
+  border-bottom: solid 1px rgb(218, 215, 215);
+}
+
+.profile-info .name {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.profile-info .age {
+  font-size: 32px;
+  margin-left: 10px;
+  color: rgb(145, 145, 145);
+}
+
+.profile-info .city {
+  font-size: 24px;
+  margin-left: 10px;
+  color: rgb(145, 145, 145);
+}
+
+.profile-stat {
+  height: 22%;
+  top: -15%;
+}
+
+.profile-stat>* {
+  text-align: center;
+}
+
+div.follower > div:first-child {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+div.follower > div:nth-child(2) {
+  letter-spacing: 2px;
+  color: rgb(145, 145, 145);
+}
+
+div.likes > div:first-child {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+div.likes > div:nth-child(2) {
+  letter-spacing: 2px;
+  color: rgb(145, 145, 145);
+}
+
+div.photos > div:first-child {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+div.photos > div:nth-child(2) {
+  letter-spacing: 2px;
+  color: rgb(145, 145, 145);
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
