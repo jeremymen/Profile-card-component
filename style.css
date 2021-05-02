@@ -6,7 +6,6 @@ body {
 
 .main-background {
   height: 100vh;
-  width: 100%;
   background-color: hsl(185, 75%, 39%);
   background-image: 
   url('./images/bg-pattern-top.svg'),
@@ -137,7 +136,51 @@ div.photos > div:nth-child(2) {
 }
 
 
+@media (max-width: 375px) {
+  body {
+    font-family: Kumbh Sans, serif;
+    line-height: 30px;
+  }
 
+  .card {
+    width: 90%;
+    height: 50%;
+  }
+  
+  .profile-img {
+    top: -15%;;
+  }
+  
+  .profile-img div {
+    border: solid white 8px;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .profile-info .name {
+    font-size: 24px;
+  }
+  
+  .profile-info .age {
+    font-size: 24px;
+  }
+  
+  .profile-info .city {
+    font-size: 18px;
+  }
+  
+  div.follower > div:first-child {
+    font-size: 24px;
+  }
+  
+  div.likes > div:first-child {
+    font-size: 24px;
+  }
+  
+  div.photos > div:first-child {
+    font-size: 24px;
+  }
+}
 
 
 .attribution { font-size: 11px; text-align: center; }
