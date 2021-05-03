@@ -4,6 +4,34 @@ body {
   line-height: 40px;
 }
 
+.d-flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .main-background {
   height: 100vh;
   background-color: hsl(185, 75%, 39%);
@@ -77,66 +105,19 @@ body {
   text-align: center;
 }
 
-div.follower > div:first-child {
+div.profile-stat * > div:first-child {
   font-size: 32px;
   font-weight: 700;
 }
 
-div.follower > div:nth-child(2) {
+div.profile-stat * > div:nth-child(2) {
+  font-size: 18px;
   letter-spacing: 2px;
   color: rgb(145, 145, 145);
 }
 
-div.likes > div:first-child {
-  font-size: 32px;
-  font-weight: 700;
-}
 
-div.likes > div:nth-child(2) {
-  letter-spacing: 2px;
-  color: rgb(145, 145, 145);
-}
-
-div.photos > div:first-child {
-  font-size: 32px;
-  font-weight: 700;
-}
-
-div.photos > div:nth-child(2) {
-  letter-spacing: 2px;
-  color: rgb(145, 145, 145);
-}
-
-.d-flex {
-  display: flex;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.justify-around {
-  justify-content: space-around;
-}
-
-.pos-relative {
-  position: relative;
-}
-
-.flex-column {
-  flex-direction: column;
-}
-
-.align-items-center {
-  align-items: center;
-}
-
-.text-center {
-  text-align: center;
-}
-
-
-@media (max-width: 375px) {
+@media (max-width: 650px) {
   body {
     font-family: Kumbh Sans, serif;
     line-height: 30px;
@@ -169,16 +150,15 @@ div.photos > div:nth-child(2) {
     font-size: 18px;
   }
   
-  div.follower > div:first-child {
+  div.profile-stat * > div:first-child {
     font-size: 24px;
+    font-weight: 700;
   }
   
-  div.likes > div:first-child {
-    font-size: 24px;
-  }
-  
-  div.photos > div:first-child {
-    font-size: 24px;
+  div.profile-stat * > div:nth-child(2) {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: rgb(145, 145, 145);
   }
 }
 
